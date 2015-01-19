@@ -6,6 +6,13 @@ then
 	source $settingsInclude
 fi
 
+## work settings
+settingsWorkInclude="$HOME/.source/settings-work"
+if [ -e "$settingsWorkInclude" ]
+then
+        source $settingsWorkInclude
+fi
+
 ## less settings
 lessInclude="$HOME/.source/less"
 if [ -e "$lessInclude" ] 
