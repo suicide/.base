@@ -1,0 +1,41 @@
+
+## general settings
+settingsInclude="$HOME/.source/settings"
+if [ -e "$settingsInclude" ] 
+then
+	source $settingsInclude
+fi
+
+## less settings
+lessInclude="$HOME/.source/less"
+if [ -e "$lessInclude" ] 
+then
+	source $lessInclude
+fi
+
+
+## homeshick
+source "$HOME/.homesick/repos/homeshick/homeshick.sh"
+fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
+
+## java settings
+javaInclude="$HOME/.source/base-java"
+if [ -e "$javaInclude" ] 
+then
+	source $javaInclude
+fi
+
+## intellij
+intellijPath="/opt/intellijidea/current"
+if [ -e "$intellijPath" ] 
+then
+	export PATH="$PATH:$intellijPath/bin"
+fi
+
+## myrepos
+myreposPath="/opt/myrepos"
+if [ -e "$myreposPath" ] 
+then
+	export PATH="$PATH:$myreposPath"
+fi
+
