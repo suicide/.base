@@ -46,3 +46,11 @@ then
 	export PATH="$PATH:$myreposPath"
 fi
 
+## gibo 
+giboPath="/opt/gibo"
+if [ -e "$giboPath" ]
+then
+        export PATH="$PATH:$giboPath"
+	source "$giboPath/gibo-completion.zsh"
+fi
+
