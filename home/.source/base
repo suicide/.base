@@ -54,3 +54,16 @@ then
 	source "$giboPath/gibo-completion.zsh"
 fi
 
+## android 
+androidToolsPath="/opt/android-sdk/current/tools"
+if [ -e "$androidToolsPath" ]
+then
+        export PATH="$PATH:$androidToolsPath"
+fi
+
+androidPlatformToolsPath="/opt/android-sdk/current/platform-tools"
+if [ -e "$androidPlatformToolsPath" ]
+then
+        export PATH="$PATH:$androidPlatformToolsPath"
+fi
+
