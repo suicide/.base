@@ -48,7 +48,7 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git svn vagrant wd sudo nyan mvn gradle lol last-working-dir jsontools catimg colored-man cp docker extract per-directory-history rsync sprunge web-search z)
+plugins=(git svn vagrant wd sudo nyan mvn gradle last-working-dir jsontools catimg colored-man cp docker extract per-directory-history rsync sprunge web-search z zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -72,6 +72,8 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 
 source "$HOME/.source/base"
 
