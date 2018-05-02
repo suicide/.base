@@ -1,2 +1,8 @@
 export EDITOR=vim
 
+# GPG
+export GPGKEY=FB9D9318
+
+# ansible
+export ANSIBLE_NOCOWS=1
+

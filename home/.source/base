@@ -32,6 +32,13 @@ then
 	source $javaInclude
 fi
 
+## ruby settings
+rubyInclude="$HOME/.source/base-ruby"
+if [ -e "$rubyInclude" ]
+then
+        source $rubyInclude
+fi
+
 ## intellij
 intellijPath="/opt/intellijidea/current"
 if [ -e "$intellijPath" ] 
