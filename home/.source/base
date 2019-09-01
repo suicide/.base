@@ -1,3 +1,9 @@
+## general bins
+homeBinPath="$HOME/.bin"
+if [ -e "$homeBinPath" ]
+then
+        export PATH="$PATH:$homeBinPath"
+fi
 
 ## general settings
 settingsInclude="$HOME/.source/settings"
@@ -58,7 +64,7 @@ giboPath="/opt/gibo"
 if [ -e "$giboPath" ]
 then
         export PATH="$PATH:$giboPath"
-	source "$giboPath/gibo-completion.zsh"
+	source "$giboPath/shell-completions/gibo-completion.zsh"
 fi
 
 ## android 
